@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right,#3F5EFB,#FC466B); " xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.RegisterController">
+   <children>
+      <TextField fx:id="emailarea" prefHeight="35.0" prefWidth="305.0" promptText="Your e-mail here" style="-fx-padding: 10; -fx-background-color: #fff; -fx-background-radius: 10; -fx-padding: 12; -fx-max-width: 350;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordarea" prefHeight="35.0" prefWidth="305.0" promptText="Your Password Here" style="-fx-padding: 10; -fx-background-radius: 10; -fx-max-width: 350; -fx-padding: 12; -fx-translate-y: 10;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="submitbtn" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#handleRegister" prefHeight="35.0" prefWidth="305.0" style="-fx-background-color: #FC466B; -fx-background-radius: 10; -fx-translate-y: 20; -fx-max-width: 350;" text="REGISTER" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

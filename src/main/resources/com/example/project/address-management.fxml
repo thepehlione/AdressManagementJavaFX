@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="529.0" prefWidth="567.0" spacing="10" style="-fx-padding: 10; -fx-background-color: linear-gradient(to left,#3F5EFB,#FC466B);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.AddressManagement">
+
+    <TextField fx:id="nameField" promptText="Name" style="-fx-padding: 8; -fx-max-width: 600;">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <TextField fx:id="surnameField" promptText="Surname" style="-fx-padding: 8; -fx-max-width: 600;">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <TextField fx:id="addressField" promptText="Address" style="-fx-padding: 8; -fx-max-width: 600;">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <Button onAction="#handleDelete" style="-fx-max-width: 600; -fx-padding: 8; -fx-background-color: #fff;" text="Delete">
+      <font>
+         <Font name="Gadugi Bold" size="18.0" />
+      </font></Button>
+
+    <Button onAction="#handleAdd" style="-fx-max-width: 600; -fx-padding: 8; -fx-background-color: #fff;" text="Add">
+      <font>
+         <Font name="Gadugi Bold" size="18.0" />
+      </font></Button>
+
+    <Button onAction="#handleEdit" prefWidth="100" style="-fx-max-width: 600; -fx-label-padding: 8;" text="Edit">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Button>
+
+
+    <ListView fx:id="listView" prefHeight="200" style="-fx-max-width: 600;" />
+
+
+</VBox>
