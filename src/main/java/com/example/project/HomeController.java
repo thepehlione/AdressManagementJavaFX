@@ -21,11 +21,11 @@ public class HomeController {
     protected  void  myfunct(){
 
         try {
-            // register.fxml dosyasını yükle
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("register.fxml"));
             Parent root = fxmlLoader.load();
 
-            // Yeni bir pencere (Stage) oluştur
+            // Yeni bir pencere oluştur
             Stage stage = new Stage();
 
             stage.setTitle("REGISTER WINDOW");
@@ -33,7 +33,6 @@ public class HomeController {
             stage.setScene(scene);
             stage.show();
 
-           // stage.setScene(new Scene(root));
 
 
 
@@ -57,19 +56,18 @@ public class HomeController {
             // Controller'a eriş
             LoginController controller = fxmlLoader.getController();
 
-            // Şu anki pencereyi (ana pencere) alıyoruz
+            // Şu anki pencereyi alıyoruz
             Stage mainStage = (Stage) loginbtn.getScene().getWindow();
 
             // Ana pencereyi login controller'a gönder
             controller.setMainStage(mainStage);
 
-            // Yeni bir pencere (login) oluştur
+            // Yeni bir pencere oluştur
             Stage loginStage = new Stage();
             loginStage.setTitle("LOGIN WINDOW");
 
             Scene scene = new Scene(root,700,550);
             loginStage.setScene(scene);
-            //loginStage.setScene(new Scene(root));
             loginStage.show();
 
         } catch (IOException e) {

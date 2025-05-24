@@ -69,7 +69,7 @@ public class LoginController {
             if (loginSuccess) {
                 showAlert(Alert.AlertType.INFORMATION, "Login is Successful", "Welcome our dear user, " + email + "!");
 
-                // Giriş başarılıysa pencereyi kapatmak için:
+                // Giriş başarılıysa pencereyi kapat
                 Stage stage = (Stage) loginEmail.getScene().getWindow();
                 stage.close();
 
@@ -79,7 +79,7 @@ public class LoginController {
 
 
 
-                // Buraya istersen yeni ekran açma kodunu ekleyebilirsin
+
                 try {
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("address-management.fxml"));
                     Parent root = fxmlLoader.load();
@@ -104,8 +104,8 @@ public class LoginController {
                 showAlert(Alert.AlertType.ERROR, "Login Error", "Email or password incorrect.");
             }
 
-            Stage stage = (Stage) loginEmail.getScene().getWindow();  // Bu satırda scene üzerinden pencereye erişiyoruz.
-            stage.close();  // Pencereyi kapatıyoruz.
+            Stage stage = (Stage) loginEmail.getScene().getWindow();  //  scene üzerinden pencereye erişime.
+            stage.close();  // Pencereyi kapat.
 
 
         } catch (IOException e) {

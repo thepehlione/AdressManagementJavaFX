@@ -4,12 +4,14 @@ public  class User {
     private String email;
     private String password;
 
-    public User() {} // Jackson için boş constructor
+    public User() {}
 
     public User(String email, String password) {
         this.email = email;
         this.password = password;
     }
+
+
 
     // Getters & Setters
     public String getEmail() {

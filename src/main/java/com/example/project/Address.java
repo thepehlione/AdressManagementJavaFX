@@ -5,7 +5,7 @@ public class Address {
     private String surname;
     private String address;
 
-    // Boş constructor (Jackson için gerekli)
+
     public Address() {}
 
     public Address(String name, String surname, String address) {
@@ -14,7 +14,7 @@ public class Address {
         this.address = address;
     }
 
-    // Getter ve Setter'lar
+
     public String getName() {
         return name;
     }

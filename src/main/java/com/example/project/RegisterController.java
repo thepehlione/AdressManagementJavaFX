@@ -39,7 +39,7 @@ public class RegisterController {
             alert.setHeaderText(null);
             alert.setContentText("Please fill in both email and password.");
             alert.showAndWait();
-            return;  // Kayıt işlemini durdur
+            return;  // return bu kodda kayıt işlemini durdurur.
         }
 
 
@@ -68,15 +68,15 @@ public class RegisterController {
             // Listeyi JSON dosyasına yeniden yaz
             mapper.writeValue(file, userList);
 
-            // Bilgilendirme
+            // Bilgilendirme Kısmı
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Registration successful!");
             alert.setHeaderText(null);
             alert.setContentText("The user registered successful.");
             alert.showAndWait();
 
-            Stage stage = (Stage) emailarea.getScene().getWindow();  // Bu satırda scene üzerinden pencereye erişiyoruz.
-            stage.close();  // Pencereyi kapatıyoruz.
+            Stage stage = (Stage) emailarea.getScene().getWindow();  //  scene üzerinden pencereye erişiyor.
+            stage.close();  // Pencereyi kapatmak için
 
 
         } catch (IOException e) {
